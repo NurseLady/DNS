@@ -128,9 +128,6 @@ class DNSserver:
 
                         self.set_socket()
 
-                        if self.database:
-                            self.save_cache(self.database)
-
                     except Exception as err:
 
                         print(str(datetime.now()) + " — cannot ask server" +
